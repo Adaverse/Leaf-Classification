@@ -42,6 +42,16 @@ batch_size = 64
 train_datagen = ImageDataGenerator(rescale=1./255)
 test_datagen = ImageDataGenerator(rescale=1./255)
 
+# More comprehensive data augmentation 
+# trainAug = ImageDataGenerator(
+# 	rotation_range=30,
+# 	zoom_range=0.15,
+# 	width_shift_range=0.2,
+# 	height_shift_range=0.2,
+# 	shear_range=0.15,
+# 	horizontal_flip=True,
+# 	fill_mode="nearest")
+
 #height_shift_range=[-30,1], horizontal_flip=True, rotation_range=30, vertical_flip = True
 train_datagenerator = train_datagen.flow_from_directory(train_path,
                                                       target_size = (224,224),
