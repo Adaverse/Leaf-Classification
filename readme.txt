@@ -1,4 +1,4 @@
-#How to run the files
+# How to run the files
 We have used two models to predict the species of the leaf.
 
 So, we have two trained models in two folders i.e. custom_model and renet. These folders contains the training script that has the implementation and the saved weights and graphs (.h5). We have two formats i.e python(.py) and python notebook(.ipynb).
